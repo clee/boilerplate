@@ -9,7 +9,7 @@ class Selenium2OnSauce(unittest.TestCase):
         desired_capabilities = webdriver.DesiredCapabilities.FIREFOX
         desired_capabilities['version'] = '6'
         desired_capabilities['platform'] = 'XP'
-        desired_capabilities['name'] = 'Testing Selenium 2 in Python at Sauce'
+        desired_capabilities['name'] = 'selenium-boilerplate (driven by jenkins)'
 
         self.driver = webdriver.Remote(
             desired_capabilities=desired_capabilities,
